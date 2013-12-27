@@ -16,17 +16,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # doesn't already exist on the user's system.
   
   config.vm.box_url = "http://goo.gl/fwnxik"
-#  config.vm.box_url = "https://googledrive.com/host/0B4LAMGR-x-UdYjBTQWJQdW9DUUU/kali64.box"
-  # config.vm.box_url = "http://domain.com/path/to/above.box"
 
-  # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network :forwarded_port, guest: 80, host: 8080
-
-  # Create a private network, which allows host-only access to the machine
-  # using a specific IP.
-  # config.vm.network :private_network, ip: "192.168.33.10"
+  config.vm.network :private_network, ip: "6.6.6.6"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
