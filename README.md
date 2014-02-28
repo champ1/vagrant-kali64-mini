@@ -9,9 +9,9 @@ A « vanilla » Kali 64 vagrant box, without any tools on it.
 * Empower users; forces us to understand what tools we use, what workflow we like, what features we need.
 
 ### Info
-* Small download size (~305MB) 
+* Small download size (~304MB) 
 * Small memory footprint (~64MB)
-* Accessed mainly from the CLI -- vagrant ssh.
+* Accessed mainly from the CLI, no GUI.
 * Provides userspace credentials (vagrant:vagrant)
 
 ### Usage 
@@ -22,3 +22,8 @@ A « vanilla » Kali 64 vagrant box, without any tools on it.
 
     # and finally 
     vagrant destroy -f
+
+**IP Address**
+
+    6.6.6.6
+
