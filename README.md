@@ -13,6 +13,9 @@ A « vanilla » Kali 64 vagrant box, without any tools on it.
 * Small memory footprint (~64MB)
 * Accessed mainly from the CLI, no GUI.
 * Provides userspace credentials (vagrant:vagrant)
+* VirtualBox Guest Additions 4.3.8
+* Puppet 3.4.3
+* Chef 11.10.4-1
 
 ### Usage 
 
