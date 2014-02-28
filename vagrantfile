@@ -5,15 +5,14 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  # All Vagrant configuration is done here. The most common configuration
-  # options are documented and commented below. For a complete reference,
-  # please see the online documentation at vagrantup.com.
 
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "kali64-1.0.5-amd64-mini"
-  config.vm.box_url = "http://goo.gl/fwnxik"
+  config.vm.box = "kali64-1.0.6-mini"
+  config.vm.box_url = ""
 
   config.vm.network :private_network, ip: "6.6.6.6"
+
+  # OS must be confirmed as debian. Vagrant can't detect Kali structure.
+  config.vm.guest = :debian
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
