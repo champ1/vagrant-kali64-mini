@@ -13,3 +13,12 @@ A « vanilla » Kali 64 vagrant box, without any tools on it.
 * Small memory footprint (~64MB)
 * Accessed mainly from the CLI -- vagrant ssh.
 * Provides userspace credentials (vagrant:vagrant)
+
+### Usage 
+
+    vagrant up
+
+    vagrant ssh
+
+    # and finally 
+    vagrant destroy -f
