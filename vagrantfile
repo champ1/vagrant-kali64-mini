@@ -6,9 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "kali64-1.0.6-mini"
-  config.vm.box_url = "http://goo.gl/14cSMz"
-
+  config.vm.box = 'svigneux/kali-linux-1.0.6-amd64-mini'
   config.vm.network :private_network, ip: "6.6.6.6"
 
   # OS must be confirmed as debian. Vagrant doesn't detect Kali properly.
